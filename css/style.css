@@ -1,0 +1,130 @@
+:root {
+    --web-width: 600px;
+    --bg-dark-color: #edaa1b;
+    --bg-light-color: #efce81;
+    --dark-green-color: #136914;
+}
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-light-color);
+    
+}
+/* entire box */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--web-width);
+    margin: 100px auto;
+    background-color: lightgray;
+    min-height: 90vh;
+    box-shadow: 3px 3px 10px 1px #287d1d;
+}
+
+/* box1 */
+.box-heading {
+    position: relative;
+    height: 25vh;
+    background: url('/img/3466939.jpg') no-repeat center center/cover;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.box-heading h2 {
+    position: absolute;
+    margin: 20px;
+    /* color: var(--light-color); */
+    color: #84b920;
+}
+
+/* form */
+
+form {
+    background: #a2d5e8;
+    font-family: 'Dancing Script', sans-serif;
+    padding: 50px;
+    min-height: 60vh;
+}
+
+input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.list {
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+.img-attribution {
+    display: flex;
+    font-family: sans-serif;
+    background: #a2d5e8;
+    padding: 0 50px;
+    font-size: small;
+    justify-content: space-between;
+    
+}
+
+.img-attribution a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;;
+    color: var(--dark-green-color);
+}
+
+.fa-trash-alt {
+    color: #639500;
+    padding-top: 20px;
+    visibility: hidden;
+}
+
+/* add item */
+
+.fa-plus {
+    color: var(--dark-green-color);
+    height: 30px;
+    width: 30px;
+}
+
+.fa-plus:hover {
+    font-size: 40px;
+}
+
+
+.box-addItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-end;
+    background: var(--bg-dark-color);
+    height: 10vh;
+    padding: 30px ; 
+    position: relative;
+}
+
+.input-box {
+    margin-left: 30px;
+    padding: 20px;
+    width: 370px;
+    height: 30px;
+    background: #d3ebf5;
+    outline-style: none;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
