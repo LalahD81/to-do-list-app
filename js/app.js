@@ -1,4 +1,10 @@
 const dayAndDate = document.querySelector('.currentDayAndDate');
+const plus = document.querySelector('.fa-plus');
+const inputBox = document.querySelector('.input-box');
+const listArea = document.querySelector('.list-area');
+const list = document.querySelector('.list');
+const deleteIcon = document.querySelector('.fa-trash-alt');
+const checkbox = document.querySelector('.checkbox');
 
 
 const displayDayAndDate = () => {
@@ -11,7 +17,14 @@ const displayDayAndDate = () => {
     dayAndDate.textContent = `${day}, ${month} ${currentDate}`;
 }
 
+const addList = () => {
+    if (inputBox.value.length > 0 ) {
+        listArea.insertAdjacentHTML('beforeend', '<div class="list">' + '<input type="checkbox" class="checkbox" />' + '<label for="to-dos">' + inputBox.value + '</label>' + '</div>');
+        inputBox.value = '';
+    }   
+}
+
 
 //app controller
 displayDayAndDate();
-
+plus.addEventListener('click', addList);

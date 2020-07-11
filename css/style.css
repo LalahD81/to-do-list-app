@@ -43,14 +43,14 @@ body {
 
 /* form */
 
-form {
+.list-area {
     background: #a2d5e8;
     font-family: 'Dancing Script', sans-serif;
     padding: 50px;
     min-height: 60vh;
 }
 
-input {
+.checkbox {
     margin-right: 10px;
     cursor: pointer;
 }
@@ -59,6 +59,8 @@ input {
     padding: 10px;
     font-size: 1.8rem;
 }
+
+/* image attrib ution and delete icon */
 
 .img-attribution {
     display: flex;
@@ -81,6 +83,7 @@ input {
     padding-top: 20px;
     visibility: hidden;
 }
+
 
 /* add item */
 
