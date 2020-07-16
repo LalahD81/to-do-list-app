@@ -1,5 +1,6 @@
 :root {
     --web-width: 600px;
+    --inner-width: 500px;
     --bg-dark-color: #edaa1b;
     --bg-light-color: #efce81;
     --dark-green-color: #136914;
@@ -28,36 +29,53 @@ body {
 
 /* box1 */
 .box-heading {
+    display: flex;
+    justify-content: space-between;
     position: relative;
+    padding: 40px;
     height: 25vh;
     background: url('/img/3466939.jpg') no-repeat center center/cover;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .box-heading h2 {
-    position: absolute;
-    margin: 20px;
-    /* color: var(--light-color); */
     color: #84b920;
+}
+
+.fa-sync-alt {
+    color: #84b920
 }
 
 /* form */
 
 .list-area {
     background: #a2d5e8;
-    font-family: 'Dancing Script', sans-serif;
+    font-family:'Josefin Sans', sans-serif;
     padding: 50px;
     min-height: 60vh;
 }
 
-.checkbox {
+.input-checkbox {
     margin-right: 10px;
     cursor: pointer;
 }
 
+
 .list {
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+    max-width: var(--inner-width);
+    margin: auto;
+    padding-bottom: 15px;
+    align-items: center;
+    
     font-size: 1.8rem;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    font-style: italic;
+    color: #bdbdbd;
 }
 
 /* image attrib ution and delete icon */
@@ -78,11 +96,14 @@ body {
     color: var(--dark-green-color);
 }
 
-.fa-trash-alt {
+.fa-trash-alt,
+.fa-circle,
+.fa-check-circle {
     color: #639500;
-    padding-top: 20px;
-    visibility: hidden;
+    align-self: center;
+    
 }
+
 
 
 /* add item */
