@@ -136,6 +136,12 @@ const clearAll = () => {
 // App controller
 displayDayAndDate();
 
+document.addEventListener('keypress', function(e) {
+  if (e.keyCode === 13) {
+    plusEvent();
+  }
+});
+
 listArea.addEventListener("click", listEvents);
 
 plus.addEventListener("click", plusEvent);

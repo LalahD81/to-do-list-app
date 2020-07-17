@@ -4,6 +4,8 @@
     --bg-dark-color: #edaa1b;
     --bg-light-color: #efce81;
     --dark-green-color: #136914;
+    --icon-color: #639500;
+    --icon-hover-color: #84b920;
 }
 /* reset */
 * {
@@ -39,11 +41,11 @@ body {
 }
 
 .box-heading h2 {
-    color: #84b920;
+    color: var(--icon-color);
 }
 
 .fa-sync-alt {
-    color: #84b920
+    color: var(--icon-color);
 }
 
 /* form */
@@ -51,8 +53,19 @@ body {
 .list-area {
     background: #a2d5e8;
     font-family:'Josefin Sans', sans-serif;
-    padding: 50px;
+    padding: 30px 50px;
     min-height: 60vh;
+}
+
+.list-area h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #639500;
+    font-size: 1.8rem;
+}
+
+.list-area h2:hover {
+    color: var(--icon-hover-color);
 }
 
 .input-checkbox {
@@ -69,7 +82,7 @@ body {
     padding-bottom: 15px;
     align-items: center;
     
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .lineThrough {
@@ -101,7 +114,13 @@ body {
 .fa-check-circle {
     color: #639500;
     align-self: center;
-    
+}
+
+.fa-trash-alt:hover,
+.fa-circle:hover,
+.fa-check-circle:hover,
+.fa-sync-alt:hover {
+    color: var(--icon-hover-color);
 }
 
 
